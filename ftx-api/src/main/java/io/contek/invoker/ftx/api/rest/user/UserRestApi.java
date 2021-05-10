@@ -32,8 +32,28 @@ public final class UserRestApi {
     return new GetAccount(actor, context);
   }
 
+  public GetFills getFills() {
+    return new GetFills(actor, context);
+  }
+
+  public GetFundingPayments getFundingPayments() {
+    return new GetFundingPayments(actor, context);
+  }
+
+  public GetMyBorrowHistory getMyBorrowHistory() {
+    return new GetMyBorrowHistory(actor, context);
+  }
+
+  public GetMyLendingHistory getMyLendingHistory() {
+    return new GetMyLendingHistory(actor, context);
+  }
+
   public GetOpenOrders getOpenOrders() {
     return new GetOpenOrders(actor, context);
+  }
+
+  public GetOrderHistory getOrderHistory() {
+    return new GetOrderHistory(actor, context);
   }
 
   public GetOrders getOrders() {

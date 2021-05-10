@@ -20,6 +20,10 @@ public final class MarketRestApi {
     return new GetMarkets(actor, context);
   }
 
+  public GetMarket getMarket() {
+    return new GetMarket(actor, context);
+  }
+
   public GetFutures getFutures() {
     return new GetFutures(actor, context);
   }
@@ -31,4 +35,6 @@ public final class MarketRestApi {
   public GetOrderBook getOrderBook() {
     return new GetOrderBook(actor, context);
   }
+
+  public GetFutureStats getFutureStats() { return new GetFutureStats(actor, context); }
 }
