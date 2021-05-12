@@ -40,6 +40,14 @@ public final class UserRestApi {
     return new GetFundingPayments(actor, context);
   }
 
+  public GetLendingOffers getLendingOffer() {
+    return new GetLendingOffers(actor, context);
+  }
+
+  public GetLendingRates getLendingRates() {
+    return new GetLendingRates(actor, context);
+  }
+
   public GetMyBorrowHistory getMyBorrowHistory() {
     return new GetMyBorrowHistory(actor, context);
   }
@@ -78,6 +86,10 @@ public final class UserRestApi {
 
   public PostAccountLeverage postAccountLeverage() {
     return new PostAccountLeverage(actor, context);
+  }
+
+  public PostLendingOffer postLendingOffer() {
+    return new PostLendingOffer(actor, context);
   }
 
   public PostOrders postOrders() {
