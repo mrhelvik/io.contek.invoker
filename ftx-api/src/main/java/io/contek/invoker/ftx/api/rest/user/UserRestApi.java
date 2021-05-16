@@ -40,7 +40,11 @@ public final class UserRestApi {
     return new GetFundingPayments(actor, context);
   }
 
-  public GetLendingOffers getLendingOffer() {
+  public GetLendingInfo getLendingInfo() {
+    return new GetLendingInfo(actor, context);
+  }
+
+  public GetLendingOffers getLendingOffers() {
     return new GetLendingOffers(actor, context);
   }
 
